@@ -1,17 +1,17 @@
-Kotlin JS Hello World Demo
-=======================
-
-Hello world from kotlin-js.
-
-
-Run:
+Polymer Hello World Demo
+========================
 
 ```
-./gradlew clean compileKotlin2Js
+./gradle compileKotlin2js
 npm install -g http-server
 http-server .
 ```
 
-Open <http://localhost:8080/index.html> from your browser, you will see "Hello, Kotlin!" in console of your browser's developer panel.
+Then open <http://localhost:8080>
 
+But failed:
 
+```
+Uncaught TypeError: Class constructor PolymerElement cannot be invoked without 'new'
+    at new CustomElement (kotlin-polymer-hello-world-demo.js:14)
+```
